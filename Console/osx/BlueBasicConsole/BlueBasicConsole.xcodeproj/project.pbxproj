@@ -1,0 +1,542 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		221E095519E6543E0015992F /* ConsoleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221E095319E6543E0015992F /* ConsoleProtocol.swift */; };
+		221E095819E65B250015992F /* AutoUpdateFirmware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221E095619E65B250015992F /* AutoUpdateFirmware.swift */; };
+		221E095B19E65B990015992F /* Firmware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221E095919E65B990015992F /* Firmware.swift */; };
+		222C27C219DFCC5A001031AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222C27C119DFCC5A001031AB /* AppDelegate.swift */; };
+		222C27C419DFCC5A001031AB /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222C27C319DFCC5A001031AB /* MasterViewController.swift */; };
+		222C27C619DFCC5A001031AB /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222C27C519DFCC5A001031AB /* DetailViewController.swift */; };
+		222C27C919DFCC5A001031AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 222C27C719DFCC5A001031AB /* Main.storyboard */; };
+		222C27CB19DFCC5A001031AB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 222C27CA19DFCC5A001031AB /* Images.xcassets */; };
+		222C27CE19DFCC5A001031AB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 222C27CC19DFCC5A001031AB /* LaunchScreen.xib */; };
+		222C284E19DFD00C001031AB /* DeviceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222C284419DFD00C001031AB /* DeviceManager.swift */; };
+		222C285019DFD00C001031AB /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222C284519DFD00C001031AB /* Device.swift */; };
+		222C285219DFD00C001031AB /* DeviceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222C284619DFD00C001031AB /* DeviceDelegate.swift */; };
+		222C285419DFD00C001031AB /* Callbacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222C284719DFD00C001031AB /* Callbacks.swift */; };
+		222C285619DFD00C001031AB /* UUIDS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222C284819DFD00C001031AB /* UUIDS.swift */; };
+		222C285819DFD00C001031AB /* DeviceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222C284919DFD00C001031AB /* DeviceService.swift */; };
+		222C285A19DFD00C001031AB /* DeviceListDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222C284A19DFD00C001031AB /* DeviceListDelegate.swift */; };
+		222C286019DFD90B001031AB /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222C285F19DFD90B001031AB /* Utilities.swift */; };
+		222C3DC91A0838E2001676FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222C3DC81A0838E2001676FF /* AppDelegate.swift */; };
+		222C3DCB1A0838E2001676FF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 222C3DCA1A0838E2001676FF /* Images.xcassets */; };
+		222C3DCE1A0838E2001676FF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 222C3DCC1A0838E2001676FF /* MainMenu.xib */; };
+		222C3DE61A083946001676FF /* BlueBasicOSX.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 222C3DE11A083946001676FF /* BlueBasicOSX.entitlements */; };
+		222C3DE71A083946001676FF /* Console.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222C3DE21A083946001676FF /* Console.swift */; };
+		222C3DE81A083946001676FF /* DeviceList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222C3DE31A083946001676FF /* DeviceList.swift */; };
+		222C3DE91A083946001676FF /* Uploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222C3DE41A083946001676FF /* Uploader.swift */; };
+		222C3DEA1A083946001676FF /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222C3DE51A083946001676FF /* Utilities.swift */; };
+		222C3E1B1A083A33001676FF /* Firmware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221E095919E65B990015992F /* Firmware.swift */; };
+		222C3E1C1A083A33001676FF /* AutoUpdateFirmware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221E095619E65B250015992F /* AutoUpdateFirmware.swift */; };
+		222C3E1D1A083A33001676FF /* ConsoleDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CE828219E0A9C30043EA84 /* ConsoleDelegate.swift */; };
+		222C3E1E1A083A33001676FF /* DeviceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222C284419DFD00C001031AB /* DeviceManager.swift */; };
+		222C3E1F1A083A33001676FF /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222C284519DFD00C001031AB /* Device.swift */; };
+		222C3E201A083A33001676FF /* DeviceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222C284619DFD00C001031AB /* DeviceDelegate.swift */; };
+		222C3E211A083A33001676FF /* Callbacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222C284719DFD00C001031AB /* Callbacks.swift */; };
+		222C3E221A083A33001676FF /* UUIDS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222C284819DFD00C001031AB /* UUIDS.swift */; };
+		222C3E231A083A33001676FF /* DeviceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222C284919DFD00C001031AB /* DeviceService.swift */; };
+		222C3E241A083A33001676FF /* DeviceListDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222C284A19DFD00C001031AB /* DeviceListDelegate.swift */; };
+		222C3E251A083A33001676FF /* ConsoleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221E095319E6543E0015992F /* ConsoleProtocol.swift */; };
+		22CE828419E0A9C30043EA84 /* ConsoleDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CE828219E0A9C30043EA84 /* ConsoleDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		221E095319E6543E0015992F /* ConsoleProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsoleProtocol.swift; sourceTree = "<group>"; };
+		221E095619E65B250015992F /* AutoUpdateFirmware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoUpdateFirmware.swift; sourceTree = "<group>"; };
+		221E095919E65B990015992F /* Firmware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Firmware.swift; sourceTree = "<group>"; };
+		222C27BD19DFCC5A001031AB /* BlueBasicIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueBasicIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		222C27C019DFCC5A001031AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		222C27C119DFCC5A001031AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		222C27C319DFCC5A001031AB /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		222C27C519DFCC5A001031AB /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		222C27C819DFCC5A001031AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		222C27CA19DFCC5A001031AB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		222C27CD19DFCC5A001031AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		222C284419DFD00C001031AB /* DeviceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceManager.swift; sourceTree = "<group>"; };
+		222C284519DFD00C001031AB /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		222C284619DFD00C001031AB /* DeviceDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceDelegate.swift; sourceTree = "<group>"; };
+		222C284719DFD00C001031AB /* Callbacks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Callbacks.swift; sourceTree = "<group>"; };
+		222C284819DFD00C001031AB /* UUIDS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UUIDS.swift; sourceTree = "<group>"; };
+		222C284919DFD00C001031AB /* DeviceService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceService.swift; sourceTree = "<group>"; };
+		222C284A19DFD00C001031AB /* DeviceListDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceListDelegate.swift; sourceTree = "<group>"; };
+		222C285F19DFD90B001031AB /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		222C3DC41A0838E2001676FF /* BlueBasic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueBasic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		222C3DC71A0838E2001676FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		222C3DC81A0838E2001676FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		222C3DCA1A0838E2001676FF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		222C3DCD1A0838E2001676FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		222C3DE11A083946001676FF /* BlueBasicOSX.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = BlueBasicOSX.entitlements; sourceTree = "<group>"; };
+		222C3DE21A083946001676FF /* Console.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Console.swift; sourceTree = "<group>"; };
+		222C3DE31A083946001676FF /* DeviceList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceList.swift; sourceTree = "<group>"; };
+		222C3DE41A083946001676FF /* Uploader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Uploader.swift; sourceTree = "<group>"; };
+		222C3DE51A083946001676FF /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		22567DD519D210710029B430 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		22CE828219E0A9C30043EA84 /* ConsoleDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsoleDelegate.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		222C27BA19DFCC5A001031AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		222C3DC11A0838E2001676FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		222C27BE19DFCC5A001031AB /* BlueBasicIOS */ = {
+			isa = PBXGroup;
+			children = (
+				222C27C119DFCC5A001031AB /* AppDelegate.swift */,
+				222C27C319DFCC5A001031AB /* MasterViewController.swift */,
+				222C27C519DFCC5A001031AB /* DetailViewController.swift */,
+				222C27C719DFCC5A001031AB /* Main.storyboard */,
+				222C27CA19DFCC5A001031AB /* Images.xcassets */,
+				222C27CC19DFCC5A001031AB /* LaunchScreen.xib */,
+				222C27BF19DFCC5A001031AB /* Supporting Files */,
+				222C285F19DFD90B001031AB /* Utilities.swift */,
+			);
+			path = BlueBasicIOS;
+			sourceTree = "<group>";
+		};
+		222C27BF19DFCC5A001031AB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				222C27C019DFCC5A001031AB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		222C284219DFCF95001031AB /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				221E095919E65B990015992F /* Firmware.swift */,
+				221E095619E65B250015992F /* AutoUpdateFirmware.swift */,
+				22CE828219E0A9C30043EA84 /* ConsoleDelegate.swift */,
+				222C284419DFD00C001031AB /* DeviceManager.swift */,
+				222C284519DFD00C001031AB /* Device.swift */,
+				222C284619DFD00C001031AB /* DeviceDelegate.swift */,
+				222C284719DFD00C001031AB /* Callbacks.swift */,
+				222C284819DFD00C001031AB /* UUIDS.swift */,
+				222C284919DFD00C001031AB /* DeviceService.swift */,
+				222C284A19DFD00C001031AB /* DeviceListDelegate.swift */,
+				221E095319E6543E0015992F /* ConsoleProtocol.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		222C3DC51A0838E2001676FF /* BlueBasicOSX */ = {
+			isa = PBXGroup;
+			children = (
+				222C3DE11A083946001676FF /* BlueBasicOSX.entitlements */,
+				222C3DE21A083946001676FF /* Console.swift */,
+				222C3DE31A083946001676FF /* DeviceList.swift */,
+				222C3DE41A083946001676FF /* Uploader.swift */,
+				222C3DE51A083946001676FF /* Utilities.swift */,
+				222C3DC81A0838E2001676FF /* AppDelegate.swift */,
+				222C3DCA1A0838E2001676FF /* Images.xcassets */,
+				222C3DCC1A0838E2001676FF /* MainMenu.xib */,
+				222C3DC61A0838E2001676FF /* Supporting Files */,
+			);
+			path = BlueBasicOSX;
+			sourceTree = "<group>";
+		};
+		222C3DC61A0838E2001676FF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				222C3DC71A0838E2001676FF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		22567DA119D1DB170029B430 = {
+			isa = PBXGroup;
+			children = (
+				222C284219DFCF95001031AB /* Shared */,
+				22567DD519D210710029B430 /* CoreBluetooth.framework */,
+				222C27BE19DFCC5A001031AB /* BlueBasicIOS */,
+				222C3DC51A0838E2001676FF /* BlueBasicOSX */,
+				22567DAB19D1DB170029B430 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		22567DAB19D1DB170029B430 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				222C27BD19DFCC5A001031AB /* BlueBasicIOS.app */,
+				222C3DC41A0838E2001676FF /* BlueBasic.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		222C27BC19DFCC5A001031AB /* BlueBasicIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 222C27DF19DFCC5A001031AB /* Build configuration list for PBXNativeTarget "BlueBasicIOS" */;
+			buildPhases = (
+				222C27B919DFCC5A001031AB /* Sources */,
+				222C27BA19DFCC5A001031AB /* Frameworks */,
+				222C27BB19DFCC5A001031AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlueBasicIOS;
+			productName = BlueBasicIOS;
+			productReference = 222C27BD19DFCC5A001031AB /* BlueBasicIOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		222C3DC31A0838E2001676FF /* BlueBasic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 222C3DDB1A0838E2001676FF /* Build configuration list for PBXNativeTarget "BlueBasic" */;
+			buildPhases = (
+				222C3DC01A0838E2001676FF /* Sources */,
+				222C3DC11A0838E2001676FF /* Frameworks */,
+				222C3DC21A0838E2001676FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlueBasic;
+			productName = BlueBasicOSX;
+			productReference = 222C3DC41A0838E2001676FF /* BlueBasic.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		22567DA219D1DB170029B430 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = tim;
+				TargetAttributes = {
+					222C27BC19DFCC5A001031AB = {
+						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = JAQ8839UNZ;
+					};
+					222C3DC31A0838E2001676FF = {
+						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = JAQ8839UNZ;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 22567DA519D1DB170029B430 /* Build configuration list for PBXProject "BlueBasicConsole" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 22567DA119D1DB170029B430;
+			productRefGroup = 22567DAB19D1DB170029B430 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				222C27BC19DFCC5A001031AB /* BlueBasicIOS */,
+				222C3DC31A0838E2001676FF /* BlueBasic */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		222C27BB19DFCC5A001031AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				222C27C919DFCC5A001031AB /* Main.storyboard in Resources */,
+				222C27CE19DFCC5A001031AB /* LaunchScreen.xib in Resources */,
+				222C27CB19DFCC5A001031AB /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		222C3DC21A0838E2001676FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				222C3DE61A083946001676FF /* BlueBasicOSX.entitlements in Resources */,
+				222C3DCB1A0838E2001676FF /* Images.xcassets in Resources */,
+				222C3DCE1A0838E2001676FF /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		222C27B919DFCC5A001031AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				222C285A19DFD00C001031AB /* DeviceListDelegate.swift in Sources */,
+				221E095519E6543E0015992F /* ConsoleProtocol.swift in Sources */,
+				222C27C619DFCC5A001031AB /* DetailViewController.swift in Sources */,
+				222C286019DFD90B001031AB /* Utilities.swift in Sources */,
+				222C27C419DFCC5A001031AB /* MasterViewController.swift in Sources */,
+				221E095819E65B250015992F /* AutoUpdateFirmware.swift in Sources */,
+				221E095B19E65B990015992F /* Firmware.swift in Sources */,
+				222C285419DFD00C001031AB /* Callbacks.swift in Sources */,
+				222C27C219DFCC5A001031AB /* AppDelegate.swift in Sources */,
+				222C285019DFD00C001031AB /* Device.swift in Sources */,
+				222C284E19DFD00C001031AB /* DeviceManager.swift in Sources */,
+				22CE828419E0A9C30043EA84 /* ConsoleDelegate.swift in Sources */,
+				222C285219DFD00C001031AB /* DeviceDelegate.swift in Sources */,
+				222C285619DFD00C001031AB /* UUIDS.swift in Sources */,
+				222C285819DFD00C001031AB /* DeviceService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		222C3DC01A0838E2001676FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				222C3E1B1A083A33001676FF /* Firmware.swift in Sources */,
+				222C3DE81A083946001676FF /* DeviceList.swift in Sources */,
+				222C3E211A083A33001676FF /* Callbacks.swift in Sources */,
+				222C3DE91A083946001676FF /* Uploader.swift in Sources */,
+				222C3E1C1A083A33001676FF /* AutoUpdateFirmware.swift in Sources */,
+				222C3E251A083A33001676FF /* ConsoleProtocol.swift in Sources */,
+				222C3E231A083A33001676FF /* DeviceService.swift in Sources */,
+				222C3E201A083A33001676FF /* DeviceDelegate.swift in Sources */,
+				222C3DC91A0838E2001676FF /* AppDelegate.swift in Sources */,
+				222C3DEA1A083946001676FF /* Utilities.swift in Sources */,
+				222C3E1D1A083A33001676FF /* ConsoleDelegate.swift in Sources */,
+				222C3E1E1A083A33001676FF /* DeviceManager.swift in Sources */,
+				222C3E221A083A33001676FF /* UUIDS.swift in Sources */,
+				222C3DE71A083946001676FF /* Console.swift in Sources */,
+				222C3E241A083A33001676FF /* DeviceListDelegate.swift in Sources */,
+				222C3E1F1A083A33001676FF /* Device.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		222C27C719DFCC5A001031AB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				222C27C819DFCC5A001031AB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		222C27CC19DFCC5A001031AB /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				222C27CD19DFCC5A001031AB /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		222C3DCC1A0838E2001676FF /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				222C3DCD1A0838E2001676FF /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		222C27DB19DFCC5A001031AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BlueBasicIOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos8.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		222C27DC19DFCC5A001031AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = BlueBasicIOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos8.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		222C3DDC1A0838E2001676FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BlueBasicOSX/BlueBasicOSX.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BlueBasicOSX/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		222C3DDD1A0838E2001676FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BlueBasicOSX/BlueBasicOSX.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = BlueBasicOSX/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		22567DC219D1DB170029B430 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		22567DC319D1DB170029B430 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		222C27DF19DFCC5A001031AB /* Build configuration list for PBXNativeTarget "BlueBasicIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				222C27DB19DFCC5A001031AB /* Debug */,
+				222C27DC19DFCC5A001031AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		222C3DDB1A0838E2001676FF /* Build configuration list for PBXNativeTarget "BlueBasic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				222C3DDC1A0838E2001676FF /* Debug */,
+				222C3DDD1A0838E2001676FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22567DA519D1DB170029B430 /* Build configuration list for PBXProject "BlueBasicConsole" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22567DC219D1DB170029B430 /* Debug */,
+				22567DC319D1DB170029B430 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 22567DA219D1DB170029B430 /* Project object */;
+}
